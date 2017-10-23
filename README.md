@@ -6,6 +6,7 @@
     Mocha
     Sinon
     Chai
+    TSLint
 
 ### Install
 
@@ -18,3 +19,7 @@
 ### Run tests
 
     npm test
+
+### Linting
+
+    npm run lint

@@ -7,7 +7,8 @@
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
     "prepublish": "./node_modules/.bin/tsc ./src/* --outDir dist/",
-    "test": "mocha -r ts-node/register ./tests/*.spec.ts"
+    "test": "mocha -r ts-node/register ./tests/*.spec.ts",
+    "lint": "tslint --project ./tslint.json -t verbose"
   },
   "author": "onuraykac@gmail.com",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "nodemon": "^1.12.1",
     "sinon": "^4.0.1",
     "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
     "typescript": "^2.5.3"
   }
 }
