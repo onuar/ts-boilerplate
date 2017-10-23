@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
-    "prepublish": "./node_modules/.bin/tsc ./src/index.ts ",
+    "prepublish": "./node_modules/.bin/tsc ./src/* --outDir dist/",
     "test": "mocha -r ts-node/register ./tests/*.spec.ts"
   },
   "author": "onuraykac@gmail.com",
